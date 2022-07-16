@@ -1,0 +1,20 @@
+.heading{
+    color: green;
+}
+
+p{
+    color: pink;
+}
+
+#container{
+    font-size: large;
+    border: 5px solid orange;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+img{
+    height: 420px;
+    width: 420px;
+    transform: rotate(180deg);
+}
