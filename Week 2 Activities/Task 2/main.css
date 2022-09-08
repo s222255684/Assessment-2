@@ -1,0 +1,31 @@
+body {
+    font-family: "Comic Sans MS";
+    margin: 0;
+    padding: 1em;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  article {
+    max-width: 940px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+  }
+  
+  .content {
+    color: #bec;
+    background-color: rgba(174, 36, 98, 0.6);
+    padding: 20px;
+    border-radius: 50px;
+  }
+  
+  aside {
+    color: #bec;
+    background-color: rgba(174, 36, 98, 0.6);
+    padding: 20px;
+    border-radius: 50px;
+  }

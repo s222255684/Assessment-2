@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p v-if="assignments[1].dueTomorrow == false">{{assignments[1].name}} Not due tomorrow</p>
+        <p v-if="assignments[0].dueTomorrow == false">{{assignments[0].name}} Not due tomorrow</p>
+        <p v-else>Due tomorrow</p>
+        <p v-for="assignment in assignments" :key="assignment.id">
+            {{assignment.name}}
+        </p>
+        <p v-show="assignments[2].dueTomorrow == true">You have assignments due soon</p>
+    </div>
+</body>
+</html>
+
+<script>
+    let app = new Vue({
+        el: '#app',
+        data: {
+           assignments: [
+           {
+               name: 'assignment1',
+               dueTomorrow: true,
+               id: 1,
+           },
+           {
+               name: 'assignment2',
+               dueTomorrow: false,
+               id:2,
+           },
+           {
+               name: 'assignment3',
+               dueTomorrow: true,
+               id:3,
+           },
+           ],
+        },
+    });
+</script>
