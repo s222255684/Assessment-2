@@ -10,7 +10,7 @@ p{
     font-size: large;
     border: 5px solid orange;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    float: right;
 }
 
 img{
